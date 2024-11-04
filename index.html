@@ -9,6 +9,96 @@
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
         <!-- FORM FIELDS HERE -->
+         <fieldset>
+            <legend>Personal Information</legend>
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" />
+            </div>
+            <div class="field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" />
+            </div>
+            <div class="field">
+                <label for="bdate">Date of Birth:</label>
+                <input type="date" name="bdate" id="bdate" min="2020-01-01" max="2025-12-31">
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>Preferences</legend>
+            <div class="field">
+                <label for="color">Favorite Color:</label>
+                <input type="color" name="color" id="color" />
+            </div>
+            <div class="field">
+                <label for="hobby">Hobby:</label>
+                <input type="text" list="hobbyList" name="hobby" id="hobby" />
+                <datalist id="hobbyList">
+                    <option value="Drawing"></option>
+                    <option value="Swiming"></option>
+                    <option value="Dancing"></option>
+                </datalist>
+            </div>
+            <div class="field">
+                <label for="level">Experience Level:</label>
+                <input type="range" name="level" id="level" min="0" max="50" step="10"/>
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>Contact Preferences</legend>
+            <div class="field">
+                <label for="contact">Preferred Contact Method:</label>
+                <input type="text" list="contactList" name="contact" id="contact" />
+                <datalist id="contactList">
+                    <option value="Drawing"></option>
+                    <option value="Swiming"></option>
+                    <option value="Dancing"></option>
+                </datalist>
+            </div>
+            <div class="field">
+                <label for="check">Subscribe to Newsletter:</label>
+                <input type="checkbox" name="check" id="check" />
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>Preferences</legend>
+            <div class="field">
+                <p>Gender:</p>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other" value="other">
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>More Information</legend>
+            <div class="field">
+                <label for="bio">Bio</label>
+                <input type="text" name="bio" id="bio">
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>Upload Documents</legend>
+            <label for="resume">Resume and other certifications:</label>
+            <input type="file" name="resume" id="resume" accept=".pdf">
+        </fieldset>
+
+        <fieldset>
+            <legend>Submission</legend>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
     </form>
 </body>
 </html>

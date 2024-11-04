@@ -11,6 +11,18 @@ form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 20px auto;
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.field {
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
